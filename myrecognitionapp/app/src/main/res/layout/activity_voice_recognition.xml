@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/home"> <!-- Fond de l'interface -->
+
+    <!-- Texte pour afficher le résultat vocal -->
+    <TextView
+        android:id="@+id/voiceResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Résultat vocal"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Bouton pour la reconnaissance vocale -->
+    <Button
+        android:id="@+id/btnStartVoiceRecognition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Démarrer reconnaissance vocale"
+        android:padding="16dp"
+        android:background="@drawable/circle_background"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Bouton pour envoyer le SMS -->
+    <Button
+        android:id="@+id/sendSmsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:enabled="false"
+        android:padding="16dp"
+        android:text="Envoyer SMS"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
